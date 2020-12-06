@@ -1,0 +1,548 @@
+        /* ==================
+    == 1. HTML or html ==
+    ================== */
+        
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+        /* =============
+    ==  2. Fonts  ==
+    ================ */
+        
+        .segoe-ui12 {
+            font-size: 1.2rem;
+            font-family: 'Segoe UI';
+        }
+        
+        .segoe-ui16 {
+            font-size: 1.6rem;
+            font-family: 'Segoe UI';
+        }
+        
+        .segoe-ui20 {
+            font-size: 2rem;
+            font-family: 'Segoe UI';
+        }
+        
+        .segoe-ui24 {
+            font-size: 2.4rem;
+            font-family: 'Segoe UI';
+        }
+        
+        .constatian16 {
+            font-size: 1.6rem;
+            font-family: 'Constantia';
+        }
+        
+        .constatian20 {
+            font-size: 2.0rem;
+            font-family: 'Constantia';
+        }
+        
+        .constatian34 {
+            font-size: 3.4rem;
+            font-family: 'Constantia';
+        }
+        /* ================
+    ==  2. BODY or body  ==
+    =================== */
+        
+        body {
+            box-sizing: border-box;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+        
+        button {
+            display: block;
+            box-sizing: border-box;
+            padding: 1rem;
+            border: none;
+        }
+        
+        button:hover {
+            background-color: silver;
+            color: #A10303;
+        }
+        /* ===============
+    == 3. anchor tags ==
+    ================== */
+        
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        
+        a:hover {
+            color: red;
+            font-size: 1.5rem;
+            border-bottom: 1px solid white;
+            font-weight: bold;
+        }
+        /* =============
+    ==  4. color  ==
+    ================ */
+        
+        .bg-c-black {
+            background-color: #000000;
+        }
+        
+        .bg-c-red {
+            background-color: #A10303;
+        }
+        
+        .bg-c-grey {
+            background-color: #363739;
+        }
+        
+        .bg-c-grey10 {
+            background-color: #F3F3F3;
+        }
+        
+        .bg-c-grey20 {
+            background-color: #95989A;
+        }
+        
+        .txt-c-white {
+            color: #ffffff;
+        }
+        
+        .txt-c-grey {
+            color: #363739;
+        }
+        
+        .txt-c-black {
+            color: #000000;
+        }
+        
+        .txt-c-blue {
+            color: #2699FB;
+        }
+        /* ===============
+    ==  5. CSS GRID  ==
+    ================== */
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: "top-menu""navbar""header""news""main""footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 4rem 8rem 30rem 5rem 1fr 10rem;
+        }
+        
+        .top-menu {
+            grid-area: top-menu;
+        }
+        
+        nav {
+            grid-area: navbar;
+        }
+        
+        header {
+            grid-area: header;
+        }
+        
+        .news {
+            grid-area: news;
+        }
+        
+        main {
+            grid-area: main;
+        }
+        
+        footer {
+            grid-area: footer;
+        }
+        /* ===============
+    ==  5. Top menu  ==
+    ================== */
+        
+        .flex-sb {
+            padding: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .section>div {
+            padding: 1rem;
+        }
+        /* ===============
+    ==  5. Navbar  ==
+    ================== */
+        
+        .flex-sb>.logo {
+            height: 100%;
+            margin-left: 1rem;
+        }
+        
+        ul {
+            list-style: none;
+            font-size: 1.4rem;
+        }
+        
+        ul>li {
+            padding-left: 1rem;
+        }
+        /* ===============
+    ==  5. header  ==
+    ================== */
+        
+        header {
+            background: url('./../images/banner-black.png') 0 0 no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        header:hover {
+            background: url('./../images/banner.png') 0 0 no-repeat;
+        }
+        
+        .name_tagline {
+            width: 100%;
+            background: url('./../images/bannerTextBackground.png') 30% 50% no-repeat;
+            font-size: 3.4rem;
+            border-radius: 30rem;
+            text-align: center;
+            margin: 10%;
+            font-family: 'Constantia';
+        }
+        /* ===============
+    ==  5. News  ==
+    ================== */
+        
+        .news>marquee>span {
+            padding-left: 5rem;
+        }
+        /* ===============
+    ==  5. Main Section  ==
+    ================== */
+        
+        .intro {
+            width: 50%;
+            background: white;
+            margin: auto;
+            margin-top: 2rem;
+            padding: 2rem;
+        }
+        
+        .flex-cc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .flex-se {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-evenly;
+        }
+        
+        .community {
+            margin: 1rem;
+        }
+        
+        .community-grid {
+            height: 100%;
+            width: 50%;
+        }
+        
+        .community-grid-flow {
+            flex-flow: column;
+            width: 50%;
+        }
+        
+        .community-grid-1 {
+            flex-flow: column;
+            background-color: #D8811D;
+            width: 100%;
+            height: 50%;
+        }
+        
+        .community-grid-1 div {
+            text-align: center;
+            margin: 0.1rem;
+            font-size: 1.5rem;
+        }
+        
+        .community-grid-1 .heading {
+            font-size: 3.4rem;
+            font-family: 'Constantia';
+        }
+        
+        .community-grid-2 {
+            flex-flow: column;
+            background: url("./../images/mammonth.png") no-repeat;
+            width: 100%;
+            height: 50%;
+        }
+        
+        .main-community-content>.main-community-content-left {
+            height: 100%;
+            width: 40%;
+            background: white;
+        }
+        
+        .main-community-content-left:hover {
+            width: 120%;
+        }
+        
+        .main-community-content>.main-community-content-left>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .main-community-content>.main-community-content-right {
+            width: 60%;
+            height: 100%;
+            background-color: #95989A;
+        }
+        
+        .main-community-content-right-1 {
+            background-color: #D8811D;
+            width: 100%;
+            height: 50%;
+        }
+        
+        .main-community-content-right-2 {
+            background: url("./../images/mammonth.png") no-repeat;
+            width: 100%;
+            height: 50%;
+        }
+        
+        .main-community-content-right-1>img,
+        .main-community-content-right-2>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .exhibitions-container {
+            max-width: 75%;
+            margin: auto;
+        }
+        
+        .exhibitions {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .exhibitions>li {
+            flex: 0 1 30rem;
+            margin-bottom: 1rem;
+            /* flex-grow flex-shrink flex-basis margin: 1rem; */
+        }
+        
+        .exhibition-last {
+            height: 25rem;
+        }
+        
+        .exhibition {
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            padding: 1rem;
+        }
+        /* ==================  */
+        /* =  Facilities ==== */
+        /* ================ */
+        
+        .circle {
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0.2px 0.8px #000000;
+        }
+        
+        .circle>img {
+            width: 50%;
+            height: 50%;
+        }
+        
+        .circle:hover {
+            width: 60%;
+            height: 60%;
+        }
+        
+        .circle>div {
+            text-align: center;
+            width: 60%;
+        }
+        
+        .exhibition-image {
+            max-width: 100%;
+            max-height: 50%;
+        }
+        
+        .exhibition-name {
+            color: #2699FB;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        .exhibition-decription {
+            color: #2699FB;
+            margin-top: 1rem;
+        }
+        
+        .exhibition-name:hover,
+        .exhibition-decription,
+        .exhibition-footer-views:hover,
+        .exhibition-footer-readmore:hover,
+        .exhibition-last:hover>a {
+            border: none;
+            color: #000000;
+            cursor: pointer;
+        }
+        
+        .exhibition>img:hover {
+            opacity: 0.8;
+        }
+        
+        .exhibition-footer {
+            color: #2699FB;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        
+        .exhibition-footer-readmore {
+            font-weight: bold;
+        }
+        
+        .exhibition-footer-views {
+            font-weight: bold;
+        }
+        
+        .exhibition-last>a {
+            color: #363739;
+        }
+        
+        .exhibition-last {
+            display: flex;
+            height: 32rem;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .exhibition-post {
+            width: 100%;
+            background-color: #ffffff;
+        }
+        
+        .exhibition-post-image>img {
+            width: 100%;
+        }
+        
+        .exhibition-post-body {
+            padding: 2rem;
+            color: #2699FB;
+        }
+        /* ======================
+   ==  7. Contact Us   ==
+   ====================== */
+        
+        .contact-us_form {
+            background-color: #ffffff;
+        }
+        
+        form {
+            background: #ffffff;
+            border-radius: 5rem;
+            width: 80%;
+            padding: 5rem;
+        }
+        
+        .input {
+            padding-top: 1rem;
+            border-color: #363739;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            width: 90%;
+            font-family: 'Segoe UI';
+        }
+        
+        #datetime {
+            padding-top: 1rem;
+            border-color: #363739;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            width: 93%;
+            font-family: 'Segoe UI';
+        }
+        
+        select {
+            padding-top: 1rem;
+            border-color: #363739;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            width: 100%;
+            font-family: 'Segoe UI';
+        }
+        
+        textarea {
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            border-radius: 1px;
+            width: 100%;
+            font-family: 'Segoe UI';
+        }
+        
+        #submit {
+            margin: auto 1rem;
+            padding-left: 1rem;
+            border-radius: 50px;
+            background: #000000;
+            color: #ffffff;
+            width: 100%;
+        }
+        
+        .contact-us_form> {
+            margin: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        Footer {
+            margin-top: 1rem;
+        }
+        
+        @media(max-width:500px) {
+            nav ul li {
+                font-size: 1rem;
+            }
+            header {
+                height: 100%;
+            }
+            .name_tagline {
+                font-size: 0.5rem;
+            }
+            .community-grid-1 div {
+                font-size: 1rem;
+            }
+            .community-grid-1 .heading {
+                font-size: 1.8rem;
+                font-family: 'Constantia';
+            }
+        }
